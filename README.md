@@ -11,13 +11,16 @@ clone repo, go to dir and run `pip install .`
 Convert a rdkit mol to blincs
 ```python
 from rdkit import Chem
-import blincs
-mol = Chen.MolFromSmiles("C1CCCC1")
+from blincs import blincs
+mol = Chen.MolFromSmiles("c1ccccc1")
 blincs.mol_to_blincs
 ```
-convert blincs to an rdkit mol
+this will output `cccccc%1%1`
+
+convert blincs to an rdkit mol:
 ```python
 blincs.blincs_to_mol("C1CCCC1")
 ```
+this will output and rdkit RWMol with pentane.
 ## Known issues
 Stereochemistry on adamantanes and similar molecules is sometimes inconsistent. Stereochemistry parsing needs to be more efficient and will probably changed to a SMILES-like system.
