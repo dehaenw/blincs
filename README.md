@@ -21,6 +21,6 @@ convert blincs to an rdkit mol:
 ```python
 blincs.blincs_to_mol("C1CCCC1")
 ```
-this will output and rdkit RWMol with pentane.
+this will output an rdkit RWMol with pentane.
 ## Known issues
 Stereochemistry on adamantanes and similar molecules is sometimes inconsistent. Stereochemistry parsing needs to be more efficient and will probably changed to a SMILES-like system.
