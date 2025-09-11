@@ -12,7 +12,7 @@ Convert a rdkit mol to blincs
 ```python
 from rdkit import Chem
 from blincs import blincs
-mol = Chen.MolFromSmiles("c1ccccc1")
+mol = Chem.MolFromSmiles("c1ccccc1")
 blincs.mol_to_blincs
 ```
 this will output `cccccc%1%1`
